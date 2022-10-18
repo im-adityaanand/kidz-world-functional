@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings and texts */
+
+h1{
+    color: white;
+    line-height: 60px;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+h4, p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 10px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.price{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+}
+
+/* Buttons */
+
+.add-button {
+    border-style: none;
+    background-color: #6B96F8;
+    color: white;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.add-button>img{
+    height: 15px;
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/* Navbar section */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav>div{
+    display: flex;
+}
+
+nav>div>img{
+    height: 20px;
+    padding: 0 10px;
+}
+
+.nav-logo{
+    height: 30px;
+}
+
+/* Title container */
+
+.title-container{
+    height: 350px;
+    background-image: url(./assets/kw-background.png);
+    background-size: cover;
+    padding: 0 50px;
+}
+
+.title-container>div{
+    padding-top: 50px;
+}
+
+/* Books container */
+
+.books-container, .games-container, .handmade-container {
+    padding: 100px 50px 0;
+}
+
+.books-row, .game-row, .hand-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-image{
+    width: 150px;
+}
+
+/* Games container */
+
+.game-image{
+    width: 200px;
+}
+
+/* Handmade section */
+
+
+
+/* Footer section */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer-img {
+    background-image: url(./assets/krishti.png);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.footer-text-div{
+    text-align: right;
+}
+
+/* Media queries */
+
+@media (max-width: 600px){
+    .books-container, .games-container, .handmade-container {
+        padding: 100px 50px 0;
+        text-align: center;
+    }
+
+    .books-row, .game-row, .hand-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .book-card, .game-card, .hand-card{
+        margin: 20px 0;
+    }
+
+    .book-image{
+        width: 200px;
+    }
+
+    .game-image{
+        width: 250px;
+    }
+    
+}
